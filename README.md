@@ -71,8 +71,9 @@ Stop Time	2023-05-08-2023 2:13:16 PM
 
 ## Conclusion
 
-In this project, I set up a small honeynet in Microsoft Azure and started collecting logs in a Log Analytics workspace. I used Microsoft Sentinel to create alerts and incidents based on the logs. I first measured key security metrics in the system before adding any security controls, and then I measured them again after applying the controls. After the security measures were put in place, the number of security events and incidents dropped significantly, showing that the controls worked well.
+For this project, I created a small honeynet in Microsoft Azure and collected logs using a Log Analytics workspace. I used Microsoft Sentinel to generate alerts and incidents from the collected data.
+First, I measured the system’s security activity before adding any security controls. Then, after applying the controls, I measured the activity again. The results showed a significant decrease in security events and incidents, indicating that the controls were effective.
 
-However, I should mention that if regular users were using the network heavily, it’s possible that more security alerts would have been triggered in the first 24 hours after applying the security controls. This could have happened because the new controls might have caught activities that were previously unnoticed or unauthorized, highlighting potential security issues that were ignored before.
+It’s also worth noting that in a real-world environment with active users, the number of alerts may increase initially after new security controls are added. This is normal because the controls may start detecting suspicious or previously unnoticed activity that wasn’t being monitored before.
 
 # Azure-SOC
